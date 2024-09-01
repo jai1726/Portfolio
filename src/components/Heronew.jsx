@@ -17,13 +17,13 @@ const container = (delay) => ({
 
 const Hero = () => {
   return (
-    <div className=' text-white text-center  py-12 md:py-16'>
+    <div className=' text-white text-center  pt-8 pb-5 lg:py-16'>
         <img
         //  initial={{ x: 100, opacity: 0 }}
         //  animate={{ x: 0, opacity: 1 }}
         //  transition={{ duration: 1, delay: 1.2 }}
         src={profilePic} alt="" 
-        className='w-60 h-60 mx-auto mb-8 rounded-full object-cover transform transition-transform duration-300 hover:scale-110'/>
+        className=' w-44 h-44 lg:w-60 lg:h-60  mx-auto mb-4 lg:mb-6 rounded-full object-cover transform transition-transform duration-300 hover:scale-110'/>
         <motion.h1
         variants={container(0.5)}
         initial="hidden"
@@ -31,8 +31,9 @@ const Hero = () => {
         className='text-4xl font-bold'>
              <span className="hidden md:visible" >  I'm {" "}</span>
             <span 
-            className='text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500'>Dende Jagadeesh</span>
-            , Software Developer
+            className='  text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500'>Dende Jagadeesh</span>
+            , <span className='text-3xl lg:text-4xl '>Software Developer
+                </span>
         </motion.h1>
         <motion.p 
          variants={container(1)}

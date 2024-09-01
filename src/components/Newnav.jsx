@@ -8,7 +8,7 @@ import { FaInstagram } from "react-icons/fa";
 
 const Navbar = () => {
     return (
-        <nav className=" mb-1 md:mb-2 flex items-center justify-between pt-8 md:py-2" id="home">
+        <nav className=" mb-1 md:mb-2 flex items-center justify-between pt-5  md:py-2" id="home">
             <div className=" flex flex-shrink-0 items-center ">
                 <img className="mx-3 w-10" src={logo} alt="logo" />
             </div>
